@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+/* Estilos dos Cards (Caixas) */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* --- Formulário --- */
+#form-adicionar label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#form-adicionar input[type="text"],
+#form-adicionar input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#btn-adicionar {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#btn-adicionar:hover {
+    background-color: #218838;
+}
+
+/* --- Tabela de Produtos --- */
+#lista-produtos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#lista-produtos th,
+#lista-produtos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#lista-produtos th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+#lista-produtos td {
+    text-align: center;
+}
+
+.remover-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remover-btn:hover {
+    background-color: #c82333;
+}
+
+/* --- Painel de Resumo --- */
+.resumo-item {
+    padding: 10px 0;
+    border-bottom: 1px dashed #e9ecef;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumo-item:last-child {
+    border-bottom: none;
+}
+
+.resumo-valor {
+    font-weight: bold;
+    color: #007bff;
+}
+
+#baixa-estoque-lista {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+    color: #dc3545;
+    /* Cor para indicar alerta */
+}
+
+/* Ajuste do Layout Grid */
+.lista-e-resumo {
+    grid-column: 2;
+    /* Ocupa a segunda coluna */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-e-resumo {
+    grid-column: 1;
+    /* Ocupa a primeira coluna */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
